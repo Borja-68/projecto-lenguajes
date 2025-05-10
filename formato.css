@@ -1,0 +1,203 @@
+html{
+    scroll-padding-top: 80px; /* El valor es la altura de tu navbar sticky */
+}
+
+body{
+    background-image: url(imagenes/header.jpg);
+    background-position: fixed;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 65%;
+    scroll-behavior: smooth; /* Añade un desplazamiento suave al hacer scroll */
+}
+
+header{
+    text-align: center;
+    font-size: xx-large;
+    color: azure;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+nav{
+    position: sticky;
+    z-index: 999; 
+    display: flex;          /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra los items del navbar */
+    align-items: center; 
+    height: 80px;
+    top: 0px;
+    background-color: rgb(155, 12, 191);
+    text-align: center;
+    
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; 
+}
+
+.listaMenu{
+    line-height: 80px;
+    display: inline-block;
+    
+}
+
+.enlazeMenu{
+   font-size: xx-large;
+   padding: 0 10px;    
+   color: rgb(22, 164, 141);
+   display: block;
+}
+
+.enlazeMenu:hover{
+    color: rgb(4, 247, 206);
+    background-color: rgba(238, 4, 4, 0.6);
+    box-shadow: 0 0 10px rgba(4, 133, 238, 0.6);
+   cursor: pointer;
+}
+
+
+
+
+aside{
+    position: fixed
+}
+
+.lateral {
+    position: fixed;
+    background-color: aliceblue;
+    right: 2%;
+    top: 40%;
+    width: 10%; /* Ancho del cuadro */
+    text-align: center;
+    border: 3px solid blueviolet;
+    padding: 20px;
+     
+    
+}
+
+.listaLateral{
+    
+    list-style: none;
+}
+
+.enlazeLateral{
+    font-size: x-large;
+    color: rgb(23, 145, 124);
+}
+.enlazeLateral:hover{
+    color: rgb(4, 243, 203);
+    cursor: pointer;
+}
+
+section{
+    position: relative;
+    background-color: aliceblue;
+    left: 2%;
+    margin-top: 100px;
+    width: 75%; /* Ancho del cuadro */
+    height: 75%; /* Alto del cuadro */
+    text-align: center;
+    min-height: 100vh; /* Asegura que la sección tenga al menos la altura de la pantalla */
+    color: rgb(7, 134, 245);}
+
+.encabezado{
+        font-size: xx-large;
+        color: rgb(23, 143, 10);    
+}
+
+
+
+.Apartados{
+    font-size: x-large;
+    color: rgb(193, 128, 7);
+}
+.parrafo{
+    padding: 5px;
+    text-align: center;
+    font-size: x-large;
+    color: rgb(0, 136, 255);
+}
+
+
+.tablaCentro{
+    text-align: center;
+    color: rgb(107, 196, 18);
+}
+.encabezadoTabla{
+    font-size: larger;
+    color: rgb(223, 68, 12);
+}
+
+
+.enlaceSubApartado{
+    font-size: x-large;
+    color: rgb(6, 164, 162);
+    margin: 20px;
+}
+.enlaceSubApartado:hover{
+    color: rgb(1, 255, 251);
+    cursor: pointer;
+}
+
+.enlaceApartado{
+    font-size: x-large;
+    color: rgb(135, 89, 3);
+}
+
+.enlaceApartado:hover{
+    color: rgb(255, 169, 8);
+    cursor: pointer;
+}
+
+.personaje{
+    font-size: large;
+    
+}
+
+.articulo{
+    display: flex;
+    align-items: flex-start;
+    font-size: large;
+    margin: 10px;
+}
+
+.informacionPersonaje{
+    font-size: medium;
+    font-family: 'Courier New';
+    flex:1;
+    text-align: center;
+    color: rgb(8, 65, 41);
+}
+
+.imagenPersonaje{
+    width: 250px;
+    height: 400px;
+
+}
+
+.informacionDesarrollador{
+    font-size: medium;
+    font-family: 'Courier New';
+    flex:1;
+    text-align: center;
+    color: rgb(16, 48, 68);
+}
+
+footer{
+    background-color: blanchedalmond;
+    text-align: center;
+    color: black;
+    font-size: large;
+}

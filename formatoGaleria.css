@@ -1,0 +1,146 @@
+html{
+    scroll-padding-top: 140px; /* El valor es la altura de tu navbar sticky */
+}
+
+body{
+    background-image: url(imagenes/header.jpg);
+    background-position: fixed;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 65%;
+    scroll-behavior: smooth; /* Añade un desplazamiento suave al hacer scroll */
+}
+
+header{
+    text-align: center;
+    font-size: xx-large;
+    color: azure;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.menuPrincipal{
+    position: sticky;
+    z-index: 999; 
+    display: flex;          /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra los items del navbar */
+    align-items: center; 
+    height: 80px;
+    top: 0px;
+    background-color: rgb(155, 12, 191);
+    text-align: center;
+    
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; 
+}
+
+.listaMenu{
+    line-height: 80px;
+    display: inline-block;
+    
+}
+
+.enlazeMenu{
+   font-size: xx-large;
+   padding: 0 10px;    
+   color: rgb(22, 164, 141);
+   display: block;
+}
+
+.enlazeMenu:hover{
+    color: rgb(4, 247, 206);
+    background-color: rgba(238, 4, 4, 0.6);
+    box-shadow: 0 0 10px rgba(4, 133, 238, 0.6);
+   cursor: pointer;
+}
+
+
+.subMenuPrincipal{
+    position: sticky;
+    z-index: 999; 
+    display: flex;          /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra los items del navbar */
+    align-items: center; 
+    height: 40px;
+    top: 80px;
+    background-color: rgb(11, 206, 212);
+    text-align: center;
+}
+
+.subMenu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; 
+}
+
+.listaSubMenu{
+    line-height: 40px;
+    display: inline-block;
+    
+}
+
+.enlazeSubMenu{
+   font-size: x-large;
+   padding: 0 10px;    
+   color: rgb(53, 7, 80);
+   display: block;
+}
+
+.enlazeSubMenu:hover{
+    color:  rgb(96, 4, 150);
+    background-color: rgba(16, 224, 110, 0.6);
+    box-shadow: 0 0 10px rgba(4, 133, 238, 0.6);
+   cursor: pointer;
+}
+
+section{
+    position: relative;
+    background-color: aliceblue;
+    left: 10%;
+    margin-top: 100px;
+    width: 80%; /* Ancho del cuadro */
+    height: 75%; /* Alto del cuadro */
+    text-align: center;
+    min-height: 100vh; /* Asegura que la sección tenga al menos la altura de la pantalla */
+    color: rgb(7, 134, 245);
+}
+
+.imagenes{
+float: left;
+
+}
+.imagen{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+
+footer{
+    background-color: blanchedalmond;
+    text-align: center;
+    color: black;
+    font-size: large;
+}
+
+.formulario{
+    text-align: center;
+    position: fixed;
+    background-color: white;
+    left:35%;
+    margin: 20px;
+}
