@@ -1,39 +1,41 @@
 html{
-    scroll-padding-top: 80px; /* El valor es la altura de tu navbar sticky */
+    scroll-padding-top: 80px; /* El valor es la del navbar sticky */
 }
 
+/*creacion de una imagen de fondo con algo de transparencia*/
 body{
-    background-image: url(imagenes/header.jpg);
-    background-position: fixed;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    opacity: 65%;
+    background-image: url(imagenes/header.jpg);  /*imagen de fondo*/
+    background-position: fixed;  /*posicion imagen de fondo*/
+    background-attachment: fixed; /*indica como se "mueve" la imagen de fondo*/
+    background-size: 100% 100%; /*tamaño de la imagen de fondo*/
+    background-repeat: no-repeat; /*indica la posibilidad de que la imagen se repita y en que eje*/
+    opacity: 65%; /*transparencia de la imagen*/
     scroll-behavior: smooth; /* Añade un desplazamiento suave al hacer scroll */
 }
 
 header{
-    text-align: center;
-    font-size: xx-large;
-    color: azure;
+    text-align: center; /* alinea el texto en la posicion que se especifique*/
+    font-size: xx-large; /* indica el tamaño del texto*/
+    color: azure; /* indica el color del texto*/
 }
 
 
+ /*le quita el subrayado a los elementos a*/
 a{
     text-decoration: none;
 }
 
 
-
+/* crea un navbar el cual se pega a la parte suerior de la pagina, es decir te sigue a medida que bajas y se superpone a todo*/
 nav{
     position: sticky;
-    z-index: 999; 
-    display: flex;          /* Usamos flexbox para centrar el contenido */
+    z-index: 999;           /*indica la profundidad, se superpone a cosas que tengas un menor numero que el que se le ponga*/
+    display: flex;          /* centrar el contenido */
     justify-content: center; /* Centra los items del navbar */
     align-items: center; 
-    height: 80px;
-    top: 0px;
-    background-color: rgb(155, 12, 191);
+    height: 80px;           /*indica la altura*/
+    top: 0px;               /*indica la altura a donde se pega con el sticky*/
+    background-color: rgb(155, 12, 191); /*le da un color al fondo*/
     text-align: center;
     
 }
@@ -48,8 +50,8 @@ nav{
 }
 
 .listaMenu{
-    line-height: 80px;
-    display: inline-block;
+    line-height: 80px;  /*indica la altura de la caja*/
+    display: inline-block; /*indica que las caja o cajas que se coloquen estaran en una linea en bloque*/
     
 }
 
@@ -57,13 +59,13 @@ nav{
    font-size: xx-large;
    padding: 0 10px;    
    color: rgb(22, 164, 141);
-   display: block;
+   display: block; /* indica que el texto aparece como una caja*/
 }
 
 .enlazeMenu:hover{
     color: rgb(4, 247, 206);
     background-color: rgba(238, 4, 4, 0.6);
-    box-shadow: 0 0 10px rgba(4, 133, 238, 0.6);
+    box-shadow: 0 0 10px rgba(4, 133, 238, 0.6); /* indica el color del borde de la caja*/
    cursor: pointer;
 }
 
@@ -74,21 +76,19 @@ aside{
     position: fixed
 }
 
+/*crea una caja donde van a estar las "rutas rapidas" a los apartados"*/
 .lateral {
     position: fixed;
     background-color: aliceblue;
-    right: 2%;
-    top: 40%;
+    right: 2%;   /*indica que el texto inicia en un valor indicao a la derecha*/
+    top: 40%;       /* indica a que altura empieza el texto*/
     width: 10%; /* Ancho del cuadro */
     text-align: center;
     border: 3px solid blueviolet;
-    padding: 20px;
-     
-    
+    padding: 20px; 
 }
 
-.listaLateral{
-    
+.listaLateral{   
     list-style: none;
 }
 
@@ -101,6 +101,7 @@ aside{
     cursor: pointer;
 }
 
+/*creacion de una caja blanca generica para que se pueda observar el texto*/
 section{
     position: relative;
     background-color: aliceblue;
@@ -110,8 +111,10 @@ section{
     height: 75%; /* Alto del cuadro */
     text-align: center;
     min-height: 100vh; /* Asegura que la sección tenga al menos la altura de la pantalla */
-    color: rgb(7, 134, 245);}
+    color: rgb(7, 134, 245);
+}
 
+ /*utilizado unica y exclusivamente para el inicio del respectivo html, es decir de que va a tratar*/
 .encabezado{
         font-size: xx-large;
         color: rgb(23, 143, 10);    
@@ -123,6 +126,7 @@ section{
     font-size: x-large;
     color: rgb(193, 128, 7);
 }
+
 .parrafo{
     padding: 5px;
     text-align: center;
@@ -130,7 +134,7 @@ section{
     color: rgb(0, 136, 255);
 }
 
-
+/*coloca la table en el centro del contenedor*/
 .tablaCentro{
     text-align: center;
     color: rgb(107, 196, 18);
@@ -140,12 +144,13 @@ section{
     color: rgb(223, 68, 12);
 }
 
-
 .enlaceSubApartado{
     font-size: x-large;
     color: rgb(6, 164, 162);
-    margin: 20px;
+    margin: 20px; /* el margen que se pone entre cosas*/
 }
+
+/* al poner el cursor soble el enlace hace que cambie de color*/
 .enlaceSubApartado:hover{
     color: rgb(1, 255, 251);
     cursor: pointer;
@@ -166,6 +171,8 @@ section{
     
 }
 
+/* esto se hace para poder colocar una imagen a la izquieda de un texto sin 
+que molerte a las imagenes que estan encima o debajo*/
 .articulo{
     display: flex;
     align-items: flex-start;
@@ -189,7 +196,7 @@ section{
 
 .informacionDesarrollador{
     font-size: medium;
-    font-family: 'Courier New';
+    font-family: 'Courier New'; /*indica el estilo de la letra del texto*/
     flex:1;
     text-align: center;
     color: rgb(16, 48, 68);

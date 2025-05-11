@@ -27,8 +27,8 @@ a{
 .menuPrincipal{
     position: sticky;
     z-index: 999; 
-    display: flex;          /* Usamos flexbox para centrar el contenido */
-    justify-content: center; /* Centra los items del navbar */
+    display: flex;         
+    justify-content: center; 
     align-items: center; 
     height: 80px;
     top: 0px;
@@ -42,7 +42,7 @@ a{
     padding: 0;
     list-style: none;
     padding-right: 20px;
-    justify-content: center; /* Centra el contenido horizontalmente */
+    justify-content: center; 
     align-items: center; 
 }
 
@@ -70,8 +70,8 @@ a{
 .subMenuPrincipal{
     position: sticky;
     z-index: 999; 
-    display: flex;          /* Usamos flexbox para centrar el contenido */
-    justify-content: center; /* Centra los items del navbar */
+    display: flex;          
+    justify-content: center; 
     align-items: center; 
     height: 40px;
     top: 80px;
@@ -84,7 +84,7 @@ a{
     padding: 0;
     list-style: none;
     padding-right: 20px;
-    justify-content: center; /* Centra el contenido horizontalmente */
+    justify-content: center; 
     align-items: center; 
 }
 
@@ -113,10 +113,10 @@ section{
     background-color: aliceblue;
     left: 10%;
     margin-top: 100px;
-    width: 80%; /* Ancho del cuadro */
-    height: 75%; /* Alto del cuadro */
+    width: 80%; 
+    height: 75%; 
     text-align: center;
-    min-height: 100vh; /* Asegura que la sección tenga al menos la altura de la pantalla */
+    min-height: 100vh; 
     color: rgb(7, 134, 245);
 }
 
